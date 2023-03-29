@@ -55,6 +55,8 @@ const runningSessions = new Map();
 
 const queue = new Queue();
 
+const args = parse(Deno.args);
+
 let lock = false;
 console.log(Deno.env.toObject())
 
