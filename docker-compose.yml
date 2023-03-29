@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  deno:
+    container_name: simulated-charger
+    image: deno
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: base
+    environment:
+      WEBSOCKET: ${WEBSOCKET}
+    ports:
+      - "${PORT}:${PORT}"
