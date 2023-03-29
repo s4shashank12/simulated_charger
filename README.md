@@ -16,6 +16,7 @@ The script simulates various charger initiated OCPP messages such as
 - Authorize
 - StartTransaction
 - StopTransaction
+- MeterValues
 
 And Remote Actions like:
 
