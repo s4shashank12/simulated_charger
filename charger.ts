@@ -55,31 +55,6 @@ const runningSessions = new Map();
 
 const queue = new Queue();
 
-const args = parse(Deno.args);
-// if (!args.c) {
-//   throw new Error("Please provide CSMS server URL with port");
-// }
-
-// if (!args.s) {
-//   throw new Error("Please provide valid chargePointId");
-// }
-
-// if (!args.p) {
-//   throw new Error("Please provide valid simulation type");
-// }
-
-// if (args.p && args.p === "RFID" && !args.r) {
-//   throw new Error("Please provide valid rfid");
-// }
-
-// if (!args.m) {
-//   //throw new Error('Please provide meter values count')
-// }
-
-// if (!args.i) {
-//   throw new Error("Please provide message interval in milliseconds");
-// }
-
 let lock = false;
 console.log(Deno.env.toObject())
 
